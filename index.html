@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Definite Descriptions in KR Languages - Tutorial at KR-2026</title>
+
+    <!-- MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
-        /* Using Roboto font family similar to ExtenDD page */
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
         body {
@@ -109,11 +113,11 @@
     <p><em>Half-day Tutorial at KR-2026</em></p>
 
     <h2>Overview</h2>
-    <p>Definite descriptions are expressions having the logical form of "the x such that φ". In classical first-order logic, since singular terms are assumed to be always denoting, definite descriptions are typically paraphrased by sentences expressing existence and uniqueness conditions—a proposal that dates back to Russell. To treat definite descriptions as genuine terms of the language, other approaches rely instead on free logics, which depart from standard FOL by allowing for singular terms that may not designate.</p>
+    <p>Definite descriptions are expressions having the logical form of "the x such that \(\varphi\)". In classical first-order logic, since singular terms are assumed to be always denoting, definite descriptions are typically paraphrased by sentences expressing existence and uniqueness conditions (a proposal that dates back to Russell). To treat definite descriptions as genuine terms of the language, other approaches rely instead on free logics, which depart from standard FOL by allowing for singular terms that may not designate. Over the years, several theories of definite descriptions have been investigated, from a semantical and a proof-theoretical perspective, in both standard and modal FOL.</p>
 
-    <p>Recently, definite descriptions have been studied also in the context of Knowledge Representation formalisms. In description logics, terms of the form ιC ("the object that is C") have been added to standard languages, leading to extensions like ALCOι<sub>u</sub> and ELOι<sub>u</sub>, for which the complexity of reasoning matches that of their standard counterparts. Similarly, expressive power and complexity have been investigated for propositional modal logics enriched with formulas of the form @<sub>φ</sub>ψ, which hold whenever there exists a unique state satisfying φ that makes ψ true.</p>
+    <p>Recently, definite descriptions have been studied also in the context of Knowledge Representation formalisms. In description logics, terms of the form \(\iota C\) ("the object that is \(C\)") have been added to standard languages, leading to extensions like \(\mathcal{ALC}\iota\), \(\mathcal{ALCO}^{\iota}_{u}\) and \(\mathcal{ELO}^{\iota}_{u}\), for which the complexity of reasoning matches that of their standard counterparts. Similarly, expressive power and complexity have been investigated for propositional modal logics enriched with formulas of the form \(@_{\varphi} \psi\), which hold whenever there exists a unique state satisfying \(\varphi\) that makes \(\psi\) true. As a mean to construct complex temporal references, definite descriptions have been also introduced as terms in first-order monadic logic of orders, as well as in first-order hybrid tense logic. Finally, names and definite descriptions that can act as non-rigid designators, referring to different objects across worlds or over time, have been studied also for their impact on the decidability boundaries of well-known monodic fragments of first-order modal and temporal logics.</p>
 
-    <p>The purpose of this tutorial is to give a comprehensive overview of the recent developments in the field, introducing a unifying framework and discussing the main results on definite descriptions that are relevant to KR applications. In addition, we intend to mention and compare alternative approaches that focus on the ε-calculus by Hilbert-Bernays, on the referring expression generation problem, and on the use of referring expressions for query answering in information systems.</p>
+    <p>The purpose of this tutorial is to give a comprehensive overview of the recent developments in the field, introducing a unifying framework and discussing the main results on definite descriptions that are relevant to KR applications. In addition, we intend to mention and compare alternative approaches that focus on the \(\epsilon\)-calculus by Hilbert-Bernays, on the referring expression generation problem, and on the use of referring expressions for query answering in information systems.</p>
 
     <h2>Target Audience and Prerequisites</h2>
 
@@ -136,7 +140,7 @@
     <h3>Part 1: Introduction and Motivation (30 minutes)</h3>
     <ul>
         <li><strong>Introduction:</strong> What are definite descriptions? Motivating examples and philosophical puzzles</li>
-        <li><strong>Philosophical Approaches:</strong> Russell, Frege/Strawson, Hintikka/Lambert and motivations for free logics; reference to Hilbert-Bernays ε-calculus</li>
+        <li><strong>Philosophical Approaches:</strong> Russell, Frege/Strawson, Hintikka/Lambert and motivations for free logics; reference to Hilbert-Bernays \(\epsilon\)-calculus</li>
         <li><strong>Referring Expressions in Information Systems</strong> (10 min): Query answering with referring expressions; referring expression generation problem</li>
     </ul>
 
